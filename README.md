@@ -1,5 +1,5 @@
-# Boilerplate ( Angular )
-Just some boilerplate code that I don't like to write all the time.
+# Secret Variables Project
+very very secret variables project
 
 ### Getting started
 ```

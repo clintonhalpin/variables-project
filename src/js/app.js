@@ -1,4 +1,4 @@
-'use strict';
+v'use strict';
 
 require('./../../dist/bower_components/angular/angular.min.js');
 require('./../../dist/bower_components/angular-ui-router/release/angular-ui-router.js');

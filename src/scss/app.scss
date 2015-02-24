@@ -10,7 +10,7 @@ body {
   background: #F5F5F5;
   width: 100%;
   height: 100%;
-  font-size: .875rem;
+  font-size: 1rem;
 }
 
 a {
@@ -22,7 +22,7 @@ input[type="text"] {
     border-radius: 3px;
     outline: 0;
     border: 1px solid #E2E2E2;
-    padding: 3px;
+    padding: 6px;
 
     &:focus {
         border-color: #538FFE;
@@ -57,7 +57,8 @@ input[type="text"] {
 }
 
 .container--panel-is-visible {
-    padding-right: -375px;
+    margin-right: 375px;
+    text-align: left;
 }
 
 .container--screen__current {
@@ -166,16 +167,19 @@ input[type="text"] {
 .section__input {
     padding-right: 1rem;
     position: relative;
+    font-family: monospace;
 
     &:before {
+        font-family: "Helvetica Neue";
         content: "@";
         position: absolute;
         color: #A5A5A5;
         padding: 4px 6px;
+        font-weight: 100;
     }
 
     input {
-        padding-left: 20px;
+        padding-left: 25px;
     }
 }
 
@@ -222,6 +226,7 @@ input[type="text"] {
     text-align: center;
     vertical-align: middle;
     box-shadow:0 0 30px 0 rgba(0,0,0,.15);
+    z-index: 301;
 
     svg {
         margin-top: 13px;

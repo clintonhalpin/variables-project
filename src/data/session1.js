@@ -1,66 +1,6 @@
 module.exports = {
     screens: [
         {
-            src: "gh.png",
-            points: [
-                {
-                    x: '200',
-                    y: '570',
-                    variables: [1,2,3]
-                },
-                {
-                    x: '500',
-                    y: '769',
-                    variables: [1,2]
-                }
-            ]
-        },
-        {
-            src: "settings.png",
-            points: [
-                {
-                    x: '200',
-                    y: '570',
-                    variables: [1]
-                },
-                {
-                    x: '500',
-                    y: '769',
-                    variables: [1]
-                }
-            ]
-        },
-        {
-            src: "npm.png",
-            points: [
-                {
-                    x: '200',
-                    y: '570',
-                    variables: [1]
-                },
-                {
-                    x: '500',
-                    y: '769',
-                    variables: [1]
-                }
-            ]
-        },
-        {
-            src: "buzzfeed.png",
-            points: [
-                {
-                    x: '200',
-                    y: '570',
-                    variables: [1]
-                },
-                {
-                    x: '500',
-                    y: '769',
-                    variables: [1]
-                }
-            ]
-        },
-        {
             src: "ph.png",
             points: [
                 {
@@ -74,21 +14,51 @@ module.exports = {
                     variables: [1]
                 }
             ]
+        },
+        {
+            src: "ph2.png",
+            points: [
+                {
+                    x: '350',
+                    y: '900',
+                    variables: [1]
+                },
+                {
+                    x: '100',
+                    y: '100',
+                    variables: [1]
+                }
+            ]
+        },
+        {
+            src: "ph3.png",
+            points: [
+                {
+                    x: '150',
+                    y: '200',
+                    variables: [1]
+                },
+                {
+                    x: '600',
+                    y: '300',
+                    variables: [1]
+                }
+            ]
         }
     ],
     aliases: [],
     variables: [
         {
             id: 1,
-            name: 'primary-blue',
+            name: 'primary-red',
             type: 'color',
-            value: '#4B84CF'
+            value: '#CB5232'
         },
         {
             id: 2,
-            name: '',
+            name: 'primary-light-brown',
             type: 'color',
-            value: '#FA9A49'
+            value: '#EDECEB'
         },
         {
             id: 3,
@@ -100,25 +70,25 @@ module.exports = {
             id: 4,
             name: '',
             type: 'color',
-            value: '#FEF9EA'
+            value: '#524540'
         },
         {
             id: 4,
             name: '',
             type: 'color',
-            value: '#EE3322'
+            value: '#D2522F'
         },
         {
             id: 4,
             name: '',
             type: 'color',
-            value: '#EDB802'
+            value: '#4AB4EE'
         },
         {
             id: 4,
             name: '',
             type: 'color',
-            value: '#4965B5'
+            value: '#746966'
         },
         {
             id: 2,

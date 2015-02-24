@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Boilerplate</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body ng-controller="mainCtrl">
+      <div class="nav">
+          
+          <svg version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+            x="0px" y="0px" width="18.748px" height="15.659px" viewBox="0 0 18.748 15.659"
+            style="enable-background:new 0 0 18.748 15.659;" xml:space="preserve">
+            <defs>
+            </defs>
+            <g id="New_Symbol_copy">
+            <g>
+            <rect x="0" y="12.316" style="fill:#FFFFFF;" width="18.748" height="3.343"/>
+            <rect x="0" y="6.158" style="fill:#FFFFFF;" width="18.748" height="3.343"/>
+            <rect x="0" style="fill:#FFFFFF;" width="18.748" height="3.343"/>
+            </g>
+            </g>
+          </svg>
+
+        <div class="nav__content">TEST</div>
+      </div>
+      <div class="container container--screen" ng-class="{ 'container--panel-is-visible' : panelVisible }">
+          <a href="#" ng-mouseover="pointActivator()" ng-mouseout="pointActivator()" ng-repeat="point in current.points" class="point" style="left: {{point.x}}px; top: {{ point.y }}px;"></a>
+          <img class="container--screen__current" src="/img/{{ current.src }}">
+      </div>
+
+      <div class="panel" ng-class="{ 'panel--is-visible' : panelVisible }">
+        <div class="panel__header">
+            <p class="panel__header__title">Declarations<span class="shade-1"> ({{variables.length}}) </span></p>
+            <a href="#" class="panel__header__close" ng-click="!panelVisible"><span class="shade-1">Close</span></a>
+        </div>
+        <div class="panel__content">
+          <div class="section__control">
+            <select>
+              <option>All Variables</option>
+              <option>Current Page</option>
+            </select>
+          </div>
+
+
+
+         <div class="section">
+           <div class="section__divider">
+              <p>font-size</p>
+            </div>
+            <div class="section__content">
+             <div class="example example__type" ng-class="{ 'example--active' : pointActive }" ng-repeat="variable in variables | filter: { type: 'font-size' }">
+                 <div class="example table">
+                     <div class="example__treatment section--type__example table-cell"><span style="font-size: {{ variable.value }}">Aa - {{ variable.value }}<span></div>
+                     <div class="section__input table-cell text--right"><input type="text" value="{{ variable.name }}"></div>
+                 </div>
+             </div>
+            </div>
+        </div>
+
+         <div class="section">
+           <div class="section__divider">
+              <p>colors</p>
+            </div>
+            <div class="section__content">
+             <div class="example example__color" ng-class="{ 'example--active' : pointActive }" ng-repeat="variable in variables | filter: { type: 'color' }">
+                 <div class="example table">
+                     <div class="example__treatment section--type__example table-cell"><span class="example--color" style="background-color: {{ variable.value }}"></span>{{ variable.value }}</div>
+                     <div class="section__input table-cell text--right"><input type="text" value="{{ variable.name }}"></div>
+                 </div>
+             </div>
+            </div>
+        </div>
+
+
+
+
+
+
+      <p class="footer man">{{ current }}</p>
+      <script src="js/bundle.js"></script>
+    </body>
+</html>
